@@ -1,57 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Baloo bhai 2", sans-serif;
 }
 body {
-  background-color: hsl(224 89% 75%);
-}
-img {
-  width: 100%;
-  /* display: block; */
+  /* background: radial-gradient(657px 657px at 2% 90%, #92b6fc 0, #dcf1f600 40%),
+    radial-gradient(642px 642px at 82% 115%, #b4cdff 0, #dcf1f600 25%),
+    linear-gradient(-73.25deg, #dcf2f7 7.43%, #9accd5 94.82%); */
+    background-color: #e9dcdc;
+  font-family: "Baloo bhai 2";
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 5rem;
-  padding-bottom: 3rem;
-}
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  align-items: center;
+  border-bottom: 2px solid #3448ff;
   justify-content: center;
-  background: radial-gradient(657px 657px at 2% 90%, #92b6fc 0, #dcf1f600 40%),
-    radial-gradient(642px 642px at 82% 115%, #b4cdff 0, #dcf1f600 25%),
-    linear-gradient(-73.25deg, #dcf2f7 7.43%, #9accd5 94.82%);
-  border-bottom: 2px solid rgb(127, 34, 232);
 }
 /* -----------------nav-bar---------------- */
 #nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0.5rem 0;
+  background-color: hsl(224 89% 75%);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 2px solid rgb(127, 34, 232);
 }
-#nav-bar > ul {
+a > h1{
+  text-decoration: none;
+}
+.nav-ul {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  margin: 0.5rem 0;
+  font-weight: medium;
+  /* width: 40%; */
 }
 #nav-bar > ul > li {
-  display: inline;
   padding: 0rem 0.5rem;
   margin: 0 0.5rem;
-  list-style-type: none;
+  cursor: pointer;
 }
 div > ul > li > a {
-  font-family: "Baloo Bhai 2", sans-serif;
+  font-weight: 600;
   font-size: 1.5rem;
-  text-decoration: none;
-  color: #f56b1b;
+  color: #000000;
+  /* color: #f56b1b; */
 }
 li ::after {
   content: " ";
@@ -63,27 +63,29 @@ li ::after {
   transform-origin: left;
   transition: transform 0.75s ease;
 }
-ul > li:hover {
-  border-radius: 10px;
-  background-color: hsl(224 89% 75%);
-}
 a:hover::after {
   transform: scale(1);
 }
 /* -----------------hero-section---------------- */
-
+.rightSection > img {
+  width: 100%;
+  object-fit: contain;
+}
 .firstSection {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: start;
-  padding: 10rem 5rem 5rem;
+  /* align-items: start; */
+  padding: 10rem 5rem 0rem;
+  /* padding-top: 5rem; */
 }
 .leftSection {
   width: 40%;
   margin: 50px 0;
 }
-.icons > i {
-  font-size: 1.2rem;
+.socialIcons > a {
+  padding: 0rem 0.25rem;
+  font-size: 1.5rem;
 }
 #intro {
   font-size: 3rem;
@@ -93,10 +95,10 @@ a:hover::after {
 }
 .firstSection > .rightSection {
   width: 40%;
+  align-items: center;
 }
-.leftSection > a > i {
-  color: rgb(82, 81, 81);
-}
+
+/* ---------------resume button--------- */
 .btn {
   width: 6rem;
   border-radius: 50px;
@@ -111,22 +113,19 @@ a:hover::after {
   box-shadow: 0px 0px 4px 4px;
 }
 /* ---------Education------------- */
-.secondSection {
-  /* padding-top: 4rem;
-  padding-bottom: 3rem; */
-}
 
 #educationList > ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 5vh 5vw;
 }
 .eduList {
   border: 1px solid black;
-  margin: 2.5rem 5rem;
+  margin: 1rem 2rem;
   border-radius: 1rem;
   padding: 1em 1em;
   background-color: #ffffff;
-  box-shadow: 10px 10px 5px red;
+  box-shadow: 5px 5px 2.5px hsl(224 89% 75%);
   list-style: none;
 }
 /* ----------Skills------------ */
@@ -134,26 +133,29 @@ a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  flex: 1 1 50%;
-  margin: 0 10vw;
+  /* flex: 1 1 50%; */
+  margin: 5vh 20vw;
+  cursor: pointer;
+}
+.techSkill:hover {
+  box-shadow: 0px 0px 5px 5px #3448ff;
+  /* background-color: #3448ff; */
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
 .techSkill {
-  width: 10rem;
-  height: 13rem;
-  padding: 1rem;
+  /* width: 10rem; */
   background-color: #ffffff;
   border: 1px solid black;
-  align-items: center;
   border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.5rem;
 }
 .tech {
-  font-size: 4rem;
-  text-align: center;
-  padding-top: 20%;
-  height: 80%;
-  width: 100%;
+  font-size: 3rem;
+  padding: 10px;
 }
 
 /* --------------single property-------- */
@@ -161,23 +163,16 @@ a:hover::after {
 .title-name {
   color: #3448ff;
 }
-.logo {
-  font-family: "Baloo bhai 2";
-  font-size: 2rem;
-}
 .title {
   text-align: center;
-  margin-bottom: 2em;
 }
-.eduContent {
+/* .eduContent {
   list-style: none;
-}
+} */
 
 /* --------CONTACT---------- */
 #Contact {
   height: 90vh;
-  /* justify-content: center;
-  align-items: center; */
 }
 /* --------------form------------ */
 form {
@@ -210,12 +205,10 @@ input {
   width: 100%;
 }
 textarea {
-  /* font-size: large; */
   padding: 0.5rem;
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  
 }
 .form-button {
   margin: 0.5rem;
@@ -233,7 +226,26 @@ textarea {
 .footer {
   background-color: lightslategray;
   height: 10vh;
-  display: flex;
+  display: inline;
   justify-content: center;
   align-items: center;
+}
+/* -------------mobile view------------- */
+@media (max-width: 768px) {
+  .firstSection {
+    flex-direction: column-reverse;
+    padding: 0rem 2rem;
+  }
+  .leftSection {
+    width: 100%;
+    margin: 0;
+  }
+  .rightSection {
+    width: 100%;
+    margin: 0;
+  }
+  #nav-bar > ul > li {
+    padding: 0rem 1rem;
+    margin: 0.5rem;
+  }
 }

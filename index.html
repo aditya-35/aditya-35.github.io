@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Portfolio</title>
   </head>
   <body>
     <nav>
       <div id="nav-bar">
         <h1 class="logo"><span class="title-name">ADITYA</span> KUMAR</h1>
-        <ul>
+        <ul class="nav-ul">
           <li><a href="#Home">Home</a></li>
           <li><a href="#Education">Education</a></li>
           <li><a href="#Skills">Skills</a></li>
@@ -26,43 +27,53 @@
     <main>
       <section class="firstSection" id="Home">
         <div class="leftSection">
+          <br />
           <h2 id="intro">
-            <br />
             Hi, I am <span class="title-name">Aditya</span><br />I am a
             <span>Web Developer</span>
           </h2>
-          
-          <h4>
-            Lorem, Lorem, ipsum Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Asperiores nisi fuga magni tenetur eveniet
-            architecto.
-          </h4>
-          <a
-            href="https://www.linkedin.com/in/adi35/"
-            target="_blank"
-            class="leftSection icons"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a
-            href="mailto:knpaditya2001@gmail.com"
-            target="_blank"
-            class="leftSection icons"
-            ><i class="fa-regular fa-envelope"></i
-          ></a>
-          <a href="#" target="_blank" class="leftSection icons"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="#" target="_blank" class="leftSection icons"
-            ><i class="fa-brands fa-salesforce"></i></a
-          ><br /><br />
-          <a href="#"><button class="btn">Resume</button></a>
+          <p>
+            I am a web developer and a salesforce developer. I am a student of
+            MCA at MMMUT Gorakhpur. I am a self-taught developer and I love to
+            learn new things. I am a quick learner and always ready to learn new
+            things.
+          </p>
+          <div class="socialIcons">
+            <a
+              href="https://bit.ly/4bZ8Wzb"
+              target="_blank"
+              class="leftSection icons"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="mailto:knpaditya2001@gmail.com"
+              target="_blank"
+              class="leftSection icons"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a
+              href="https://github.com/aditya-35"
+              target="_blank"
+              class="leftSection icons"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.salesforce.com/trailblazer/adityakumar10"
+              target="_blank"
+              class="leftSection icons"
+              ><i class="fa-brands fa-salesforce"></i
+            ></a>
+          </div>
+          <br />
+          <button class="btn">Resume</button>
         </div>
         <div class="rightSection">
+          <br />
           <img src="Assets/picofme.png" alt=" Image" />
         </div>
       </section>
       <section class="secondSection" id="Education">
-        <h2 class="logo title">Education</h2>
+        <h2 class="title">Education</h2>
         <div id="educationList">
           <ul>
             <li class="eduList">
@@ -72,13 +83,7 @@
                   <li>2022-2024</li>
                   <li>
                     <p>
-                      Lorem ipsum dolor sit. Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Veniam sed et cumque odit
-                      debitis ab? Saepe, expedita quibusdam amet consectetur, a
-                      iusto explicabo voluptas laboriosam consequatur placeat
-                      temporibus quo provident. Ipsa iste autem, explicabo nihil
-                      quas distinctio, animi similique tempora, inventore id
-                      eveniet earum consectetur!
+                      I pursued my MCA from MMMUT Gorakhpur. I am a student of
                     </p>
                   </li>
                 </ul>
@@ -94,10 +99,6 @@
                       Lorem ipsum dolor sit. Lorem ipsum dolor, sit amet
                       consectetur adipisicing elit. Iure illo, aspernatur sit
                       dolore aliquid tempora earum sunt? Dolorum ab doloribus
-                      odit debitis ex quam molestias id deleniti iusto adipisci?
-                      Ducimus neque sint iure, perspiciatis illo expedita
-                      consectetur accusamus aspernatur minima tempore esse porro
-                      omnis repudiandae.
                     </p>
                   </li>
                 </ul>
@@ -145,7 +146,7 @@
         </div>
       </section>
       <section class="thirdSection" id="Skills">
-        <h2 class="logo title">Skills</h2>
+        <h2 class="title">Skills</h2>
         <div class="skillContainer">
           <div class="techSkill">
             <div class="tech">
@@ -204,10 +205,15 @@
         </div>
       </section>
       <section class="fourthSection" id="Projects">
-        <h2 class="logo title">Projects</h2>
+        <h2 class="title">Projects</h2>
+        <div class="skillContainer">
+          <div class="techSkill">
+            <div class="tech"></div>
+          </div>
+        </div>
       </section>
       <section class="fifthSection" id="Contact">
-        <h2 class="logo title">Contact Me</h2>
+        <h2 class="title">Contact Me</h2>
         <form>
           <div class="form-div">
             <label for="name">Your Name</label>
@@ -228,9 +234,9 @@
           </div>
           <div class="form-div">
             <label for="Message">Any Message</label>
-            <textarea name="Message" id="" ></textarea>
+            <textarea name="Message" id=""></textarea>
           </div>
-          <br>
+          <br />
           <button type="submit" class="form-button">Submit</button>
         </form>
       </section>
@@ -240,9 +246,11 @@
         <h2>
           Made By
           <a href="https://www.linkedin.com/in/adi35/" target="_blank"
-            >Aditya Kumar</a>
+            >Aditya Kumar</a
+          >
         </h2>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
