@@ -8,7 +8,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>Portfolio</title>
   </head>
   <body>
@@ -22,12 +25,15 @@
           <li><a href="#Projects">Projects</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
+
+        <button class="hamburger" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
     </nav>
     <main>
       <section class="firstSection" id="Home">
         <div class="leftSection">
-          <br />
           <h2 id="intro">
             Hi, I am <span class="title-name">Aditya</span><br />I am a
             <span>Web Developer</span>
@@ -146,7 +152,7 @@
         </div>
       </section>
       <section class="thirdSection" id="Skills">
-        <h2 class="title">Skills</h2>
+        <h1 class="title">Skills</h1>
         <div class="skillContainer">
           <div class="techSkill">
             <div class="tech">
@@ -241,16 +247,20 @@
         </form>
       </section>
     </main>
-    <footer>
+    <!-- <footer>
       <div class="footer">
-        <h2>
+        <p>
           Made By
           <a href="https://www.linkedin.com/in/adi35/" target="_blank"
             >Aditya Kumar</a
           >
-        </h2>
+        </p>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- ========scroll reveal======== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ========Main JS======== -->
     <script src="script.js"></script>
   </body>
 </html>
