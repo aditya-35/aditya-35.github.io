@@ -41,6 +41,7 @@ a{
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1000;
   border-bottom: 2px solid rgb(127, 34, 232);
 }
 /* Hide hamburger by default */
