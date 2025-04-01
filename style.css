@@ -6,22 +6,31 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  list-style-type: none;
-  text-decoration: none;
   font-family: "Baloo bhai 2", sans-serif;
 }
 body {
-  /* background: radial-gradient(657px 657px at 2% 90%, #92b6fc 0, #dcf1f600 40%),
+  background: radial-gradient(657px 657px at 2% 90%, #92b6fc 0, #dcf1f600 40%),
     radial-gradient(642px 642px at 82% 115%, #b4cdff 0, #dcf1f600 25%),
-    linear-gradient(-73.25deg, #dcf2f7 7.43%, #9accd5 94.82%); */
-  background-color: #e9dcdc;
+    linear-gradient(-73.25deg, #dcf2f7 7.43%, #9accd5 94.82%);
   font-family: "Baloo bhai 2";
+}
+img{
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
 }
 section {
   min-height: 100vh;
   padding-top: 5rem;
-  /* border-bottom: 2px solid #3448ff; */
-  /* justify-content: center; */
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 /* -----------------nav-bar---------------- */
 #nav-bar {
@@ -33,9 +42,6 @@ section {
   width: 100%;
   top: 0;
   border-bottom: 2px solid rgb(127, 34, 232);
-}
-a > h1 {
-  text-decoration: none;
 }
 /* Hide hamburger by default */
 .hamburger {
@@ -101,7 +107,6 @@ div > ul > li > a {
   font-weight: 600;
   font-size: 1.5rem;
   color: #000000;
-  /* color: #f56b1b; */
 }
 li ::after {
   content: " ";
@@ -118,7 +123,7 @@ a:hover::after {
 }
 /* -----------------hero-section---------------- */
 .rightSection > img {
-  border: 10px solid black;
+  border:5px solid black;
   border-radius: 50%;
   width: 100%;
   object-fit: contain;
@@ -182,6 +187,7 @@ a:hover::after {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 5vh 5vw;
+  cursor: pointer;
 }
 .eduList {
   border: 1px solid black;
@@ -192,11 +198,17 @@ a:hover::after {
   box-shadow: 5px 5px 2.5px hsl(224 89% 75%);
   list-style: none;
 }
+.eduList:hover {
+  box-shadow: 0px 0px 5px 5px #3448ff;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
 /* ----------Skills------------ */
 #Skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .skillContainer {
   display: flex;
@@ -204,7 +216,6 @@ a:hover::after {
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  /* flex: 1 1 50%; */
   margin: 5vh 20vw;
   cursor: pointer;
 }
@@ -215,7 +226,8 @@ a:hover::after {
   transition: all 0.2s ease;
 }
 .techSkill {
-  /* width: 10rem; */
+  width: 8rem;
+  height: auto;
   background-color: #ffffff;
   border: 1px solid black;
   border-radius: 0.5rem;
@@ -226,16 +238,40 @@ a:hover::after {
   font-size: 3rem;
   padding: 10px;
 }
+/* ============Projects============= */
+#Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-list{
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  margin: 5vh 5vw;
+  gap: 3rem;
+}
+
+.project-item > img{
+cursor: pointer;
+object-fit: contain;
+border-radius: .5rem;
+}
+.project-item > img:hover{
+  transform: scale(1.00);
+  transition: all 0.2s ease;
+}
 
 /* --------------single property-------- */
 
 .title-name {
   color: #3448ff;
 }
-.title {
+/* .title {
   text-align: center;
   font-size: 2rem;
-}
+} */
 
 /* --------CONTACT---------- */
 #Contact {
@@ -244,17 +280,17 @@ a:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 /* --------------form------------ */
 form {
-  /* margin-top: 6rem; */
   margin-left: auto;
   margin-right: auto;
   width: 30vw;
   border: 2px solid black;
   border-radius: 10px;
   padding: 1rem;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
 }
 .form-div {
@@ -282,13 +318,12 @@ textarea {
   height: 100%;
 }
 .form-button {
-  margin: 0.5rem;
   color: #ffffff;
   background-color: #3448ff;
   padding: 0.1rem;
   border-radius: 10px;
   width: 6rem;
-  align-self: center;
+  align-items: center;
 }
 .form-button:hover {
   background-color: #1c2fd7;
@@ -307,7 +342,7 @@ textarea {
   
   .firstSection {
     flex-direction: column-reverse;
-    padding: 0rem 2rem;
+    /* padding: 0rem 2rem; */
   }
   .leftSection {
     width: 100%;
@@ -343,7 +378,6 @@ textarea {
 
     /* Hero Section */
     .firstSection {
-      padding: 2rem 2rem 2rem;
       text-align: center;
     }
 
@@ -430,3 +464,5 @@ textarea {
     }
   }
 }
+/* 
+======extra========= */
