@@ -270,10 +270,6 @@ border-radius: .5rem;
 .title-name {
   color: #3448ff;
 }
-/* .title {
-  text-align: center;
-  font-size: 2rem;
-} */
 
 /* --------CONTACT---------- */
 #Contact {
@@ -393,7 +389,6 @@ textarea {
     }
 
     .rightSection {
-      width: 100%;
       margin: 0 auto;
     }
 
@@ -421,6 +416,12 @@ textarea {
     .techSkill {
       width: 45%;
       padding: 0.5rem;
+    }
+    /* Projects section */
+    
+    .project-list{
+      flex-direction: column;
+      justify-content: center;
     }
 
     /* Contact Section */
