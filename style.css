@@ -152,7 +152,7 @@ a:hover::after {
   transition: all 0.2s ease;
 }
 #intro {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .leftSection > h4 {
   text-transform: uppercase;
@@ -160,6 +160,19 @@ a:hover::after {
 .firstSection > .rightSection {
   width: 40%;
   align-items: center;
+}
+#role {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Optional: Add cursor animation */
+#role::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* ---------------resume button--------- */
@@ -208,8 +221,7 @@ a:hover::after {
 #Skills {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .skillContainer {
   display: flex;
@@ -243,25 +255,35 @@ a:hover::after {
 #Projects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .project-list{
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
-  margin: 5vh 5vw;
+  /* margin: 5vh 5vw; */
   gap: 3rem;
+}
+.project-item{
+  display: grid;
+  border: 1px solid black;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 2.5px hsl(226, 9%, 37%);
+  cursor: pointer;
+
 }
 
 .project-item > img{
-cursor: pointer;
-width: 300px;
+
+/* width: 300px; */
 object-fit: contain;
 border-radius: .5rem;
 }
-.project-item > img:hover{
-  transform: scale(1.00);
+.project-item:hover{
+  transform: scale(1.05);
   transition: all 0.2s ease;
 }
 
@@ -270,14 +292,16 @@ border-radius: .5rem;
 .title-name {
   color: #3448ff;
 }
-
+.title{
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
 /* --------CONTACT---------- */
 #Contact {
-  height: 80vh;
-  padding-top: 6rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 /* --------------form------------ */
@@ -340,15 +364,15 @@ textarea {
   
   .firstSection {
     flex-direction: column-reverse;
-    /* padding: 0rem 2rem; */
+    
   }
   .leftSection {
     width: 100%;
-    margin: 0;
+    padding: 0 10%;
+    /* margin: 0px 20%; */
   }
   .rightSection {
-    width: 100%;
-    margin: 0;
+   height:  100%;
   }
   #nav-bar > ul > li {
     padding: 0rem 1rem;
@@ -409,7 +433,7 @@ textarea {
 
     /* Skills Section */
     .skillContainer {
-      margin: 5vh 5vw;
+      margin: 5vh 20%;
       gap: 1rem;
     }
 
@@ -467,5 +491,3 @@ textarea {
     }
   }
 }
-/* 
-======extra========= */
