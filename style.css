@@ -31,6 +31,7 @@ ul {
 a{
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 /* -----------------nav-bar---------------- */
 #nav-bar {
@@ -265,6 +266,8 @@ a:hover::after {
   gap: 3rem;
 }
 .project-item{
+  width: 20rem;
+  /* height: 20rem; */
   display: grid;
   border: 1px solid black;
   margin: 1rem 2rem;
@@ -286,7 +289,16 @@ border-radius: .5rem;
   transform: scale(1.05);
   transition: all 0.2s ease;
 }
-
+.project-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.project-btn button{
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  background-color: #000000;
+  color: #ffffff;
+}
 /* --------------single property-------- */
 
 .title-name {
@@ -305,37 +317,28 @@ border-radius: .5rem;
   align-items: center;
 }
 /* --------------form------------ */
-form {
+#contact-form{
   margin-left: auto;
   margin-right: auto;
   width: 30vw;
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 2rem;
   padding: 1rem;
-  display: inline-block;
+  display: flex;
   flex-direction: column;
-}
-.form-div {
-  margin-bottom: 0.5rem;
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-.form-div > label {
-  font-size: 1rem;
-  font-weight: 500;
 }
 input {
   background-color: hsl(0, 1%, 80%);
   border: solid hsl(0, 0%, 28%);
   color: rgb(105, 104, 104);
   padding: 0.5rem;
-  border-radius: 5px;
+  padding-left: 1rem;
+  border-radius: 1.5rem;
   width: 100%;
 }
 textarea {
   padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 1.5rem;
   width: 100%;
   height: 100%;
 }
@@ -449,7 +452,7 @@ textarea {
     }
 
     /* Contact Section */
-    form {
+    #contact-form {
       width: 80%;
       margin-top: 2rem;
     }
