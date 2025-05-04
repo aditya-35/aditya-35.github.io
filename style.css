@@ -16,7 +16,7 @@ body {
 }
 img {
   width: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
   cursor: pointer;
 }
 section {
@@ -35,19 +35,20 @@ a {
 }
 /* -----------------nav-bar---------------- */
 nav{
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 100;
   backdrop-filter: blur(5px);
   padding: 10px;
   border-bottom: 2px solid rgb(127, 34, 232);
 }
 #nav-bar {
+  /* position: absolute; */
   display: flex;
   align-items: center;
   justify-content: space-around;
   /* background-color: hsl(224 89% 75%); */
-  width: 100%;
+  width: 100vw;
   
   
 }
@@ -131,12 +132,14 @@ a:hover::after {
 }
 /* -----------------hero-section---------------- */
 .rightSection > img {
-  border: 5px solid black;
+  /* border: 5px solid black; */
   border-radius: 50%;
   width: 100%;
+  padding: .5rem;
   object-fit: contain;
   filter: grayscale(100%);
   transition: filter .75s ease;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .rightSection > img:hover{
   filter: grayscale(0%);
@@ -147,7 +150,7 @@ a:hover::after {
   justify-content: space-around;
   align-items: center;
   padding-top: 0;
-  animation: backInUp 1.5s ease-in;
+  
   
 }
 .socialIcons > a {
@@ -171,6 +174,7 @@ a:hover::after {
   width: 40%;
   align-items: center;
   /* transition: transform 0.3s ease; */
+  animation: backInUp 1.5s ease-in;
   
 }
 #role {

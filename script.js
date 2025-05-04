@@ -52,9 +52,3 @@ function typeEffect() {
 // Start the animation
 typeEffect();
 
-
-// Scroll animation
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('#wrapper'),
-  smooth: true,
-});
