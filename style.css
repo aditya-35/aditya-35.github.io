@@ -147,6 +147,7 @@ a:hover::after {
   justify-content: space-around;
   align-items: center;
   padding-top: 0;
+  animation: backInUp 1.5s ease-in;
   
 }
 .socialIcons > a {
@@ -170,7 +171,7 @@ a:hover::after {
   width: 40%;
   align-items: center;
   /* transition: transform 0.3s ease; */
-  animation: backInUp 1.5s ease-in;
+  
 }
 #role {
   transition: opacity 0.5s ease-in-out;
@@ -511,6 +512,6 @@ textarea {
   }
 }
 @keyframes backInUp {
-  0% { opacity: 0; transform: translateY(500px); }
+  0% { opacity: 0; transform: translateY(-20%); }
   100% { opacity: 1; transform: translateY(0); }
 }
