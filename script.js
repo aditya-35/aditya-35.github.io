@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 })
 // span element js
-const roles = ["Web Developer", "Front-end Developer"];
+const roles = ["DevOps Engineer", "Cloud Engineer"];
 const roleElement = document.getElementById("role");
 let roleIndex = 0;
 let charIndex = 0;
