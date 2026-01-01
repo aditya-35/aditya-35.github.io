@@ -1,3 +1,3 @@
 # personal-portfolio
-git 
+This repository is my personal repository for Porfolio.
  
